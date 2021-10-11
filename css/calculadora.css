@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DotGothic16', sans-serif;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eeefef;
+}
+
+body div.calculadora {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eeefef;
+    border: 1px solid #ffffff33;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: -6px -6px 16px 0 #ffffff7f, 6px 6px 16px 0 #d1cdc77f;
+}
+
+/*botones llamada especifica*/
+
+div input[type="button"], button {
+    width: 65px;
+    height: 65px;
+    margin: 10px 10px;
+    font-size: 1.7em;
+    font-weight: 600px;
+    cursor: pointer;
+    outline: none;
+    color: inherit;
+    background: transparent;
+    border: none;
+    border-radius: 100px;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.5), 3px 3px 6px rgba(0, 0, 0, 0.07), inset 1px 1px 1px rgba(255, 255, 255, 0.75), inset -1px -1px 1px rgba(0, 0, 0, 0.04);
+}
+
+/*ventana resultado*/
+
+div input[type="text"] {
+    height: 80px;
+    width: 330px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    box-shadow: inset -6px -6px 12px rgba(255, 255, 255, 0.8), inset -6px -6px 8px rgba(255, 255, 255, 0.5), inset 6px 6px 4px rgba(255, 255, 255, 0.1), inset 6px 6px 8px rgba(0, 0, 0, 0.15);
+    font-size: 40px;
+    color: tomato;
+    transition: 0.4s ease;
+    text-align: right;
+}
+
+/*boton resultado y borrar*/
+
+div .resultado input, div.resultado button {
+    height: 80px;
+    width: 155px;
+}
+
+#suma, #resta, #mult, #divide, #porcen, #decimal, #igual {
+    color: tomato;
+}
+
+div input[onclick="valor"] button:active {
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.05), -1px -1px 2px rgba(0, 0, 0, 0.05), 2px 2px 2px rgba(255, 255, 255, 0.5);
+}
